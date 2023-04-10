@@ -5,27 +5,12 @@ This is my final *azure* deployed link - https://victorious-glacier-0af97b910.2.
 
 Home page
 [Screenshot (172Screenshot ![Home](https://user-images.githubusercontent.com/84512609/230923398-201708a7-1645-4854-ae3d-ee9926bc3a24.png)
-(1723) (https://user-images.githubusercontent.com/94239926/161370151-7d7247b9-c3b5-41df-a4c1-7db0780a2dc0.png)
-
-
-
-
 
 About
 ![About1](https://user-images.githubusercontent.com/84512609/230923796-3bf4c2a9-7d62-45e0-a1c0-c3485baefc79.png)
 
-
-
-
-
-
 Contact Us
 ![ContactUs](https://user-images.githubusercontent.com/84512609/230923879-8cea7a35-2967-48ad-a705-e07f519b31f4.png)
 
-
-
-
-
-
-azure portal screen shot
+Azure portal screen shot
 ![AzurePortalScreenshot](https://user-images.githubusercontent.com/84512609/230924153-25a06fb9-af4a-48e8-ad92-53261fc62b2e.png)
