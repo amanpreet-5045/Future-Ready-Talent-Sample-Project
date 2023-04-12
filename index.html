@@ -995,15 +995,14 @@
     <!-- //Js scripts -->
 
     <div id="webchat" role="main"></div>
-    <iframe src="https://webchat.botframework.com/embed/Frt-Final-Bot-bot?s=myfrtbot" 
-    style="height: 502px; max-height: 502px;"></iframe>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
     <script>
       window.WebChat.renderWebChat({
         directLine: window.WebChat.createDirectLine({
-          secret: myfrtbot
+          secret: 'YOUR_DIRECT_LINE_SECRET'
         }),
-        userID: 'marshall_5045',
-        username: marshall,
+        userID: 'YOUR_USER_ID',
+        username: 'YOUR_USERNAME',
         locale: 'en-US',
         botAvatarInitials: 'Bot',
         userAvatarInitials: 'You'
