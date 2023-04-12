@@ -21634,5 +21634,33 @@ p.count-text {
     font-size: 22px;
     line-height: 35px;
   }
+
+  #chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  #chatbot-frame {
+    display: none;
+    width: 400px;
+    height: 500px;
+  }
+  
+  #chatbot-container.show #chatbot-frame {
+    display: block;
+  }
+  
+  #chatbot-toggle {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4285f4;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 /* //team section */

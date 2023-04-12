@@ -74,40 +74,6 @@
                                 placeholder="Search">
                             <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
                         </form>
-                    </div>
-                    <div id="chatbot-container">
-                        <div id="chatbot-frame">
-                            <iframe src="path-to-your-chatbot-iframe" frameborder="0"></iframe>
-                        </div>
-                        <button id="chatbot-toggle">Chat with us</button>
-                        <style>#chatbot-container {
-                            position: fixed;
-                            bottom: 20px;
-                            right: 20px;
-                            z-index: 9999;
-                          }
-                          
-                          #chatbot-frame {
-                            display: none;
-                            width: 400px;
-                            height: 500px;
-                          }
-                          
-                          #chatbot-container.show #chatbot-frame {
-                            display: block;
-                          }
-                          
-                          #chatbot-toggle {
-                            display: block;
-                            margin: 10px auto;
-                            padding: 10px;
-                            border: none;
-                            border-radius: 5px;
-                            background-color: #4285f4;
-                            color: #fff;
-                            cursor: pointer;
-                          }</style>
-                    </div>
                 </div>
                 <!-- //search button -->
                 <!-- toggle switch for light and dark theme -->
@@ -124,6 +90,14 @@
                         </div>
                     </nav>
                 </div>
+
+            </div>
+            <div id="chatbot-container">
+                <div id="chatbot-frame">
+                    <iframe src="path-to-your-chatbot-iframe" frameborder="0"></iframe>
+                </div>
+                <button id="chatbot-toggle">Chat with us</button>
+            </div>
                 <!-- //toggle switch for light and dark theme -->
             </nav>
         </div>
