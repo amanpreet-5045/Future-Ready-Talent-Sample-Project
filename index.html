@@ -15,6 +15,15 @@
     <!-- //google-fonts -->
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
+
+    <title>My Website</title>
+  <style>
+    #webchat {
+      height: 500px;
+      width: 100%;
+    }
+  </style>
+</head>
 </head>
 
 <body>
@@ -984,6 +993,22 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- //bootstrap -->
     <!-- //Js scripts -->
+
+    <div id="webchat" role="main"></div>
+    <iframe src="https://webchat.botframework.com/embed/Frt-Final-Bot-bot?s=myfrtbot" 
+    style="height: 502px; max-height: 502px;"></iframe>
+    <script>
+      window.WebChat.renderWebChat({
+        directLine: window.WebChat.createDirectLine({
+          secret: myfrtbot
+        }),
+        userID: 'marshall_5045',
+        username: marshall,
+        locale: 'en-US',
+        botAvatarInitials: 'Bot',
+        userAvatarInitials: 'You'
+      }, document.getElementById('webchat'));
+    </script>
 </body>
 
 </html>
