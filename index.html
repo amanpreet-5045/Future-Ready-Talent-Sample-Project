@@ -16,7 +16,20 @@
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
 
-    
+    <script>
+        var chatbotContainer = document.getElementById("chatbot-container");
+        var chatbotFrame = document.getElementById("chatbot-frame");
+        var chatbotToggle = document.getElementById("chatbot-toggle");
+
+        chatbotToggle.onclick = function () {
+            chatbotContainer.classList.toggle("show");
+        }
+
+        // Change "path-to-your-chatbot-iframe" to the actual URL of your chatbot iframe
+        chatbotFrame.src = "https://webchat.botframework.com/embed/Frt-Final-Bot-bot?s=YOUR_SECRET_HERE";
+
+    </script>
+
 </head>
 
 <body>
@@ -62,6 +75,39 @@
                             <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
                         </form>
                     </div>
+                    <div id="chatbot-container">
+                        <div id="chatbot-frame">
+                            <iframe src="path-to-your-chatbot-iframe" frameborder="0"></iframe>
+                        </div>
+                        <button id="chatbot-toggle">Chat with us</button>
+                        <style>#chatbot-container {
+                            position: fixed;
+                            bottom: 20px;
+                            right: 20px;
+                            z-index: 9999;
+                          }
+                          
+                          #chatbot-frame {
+                            display: none;
+                            width: 400px;
+                            height: 500px;
+                          }
+                          
+                          #chatbot-container.show #chatbot-frame {
+                            display: block;
+                          }
+                          
+                          #chatbot-toggle {
+                            display: block;
+                            margin: 10px auto;
+                            padding: 10px;
+                            border: none;
+                            border-radius: 5px;
+                            background-color: #4285f4;
+                            color: #fff;
+                            cursor: pointer;
+                          }</style>
+                    </div>
                 </div>
                 <!-- //search button -->
                 <!-- toggle switch for light and dark theme -->
@@ -90,8 +136,8 @@
             <div class="owl-blog owl-carousel owl-theme">
                 <div class="item">
                     <div class="news-img position-relative">
-                        <a href="blog-single.html"><img src="assets/images/banner-blog1.jpg" class="img-fluid img-responsive"
-                                alt="news image"></a>
+                        <a href="blog-single.html"><img src="assets/images/banner-blog1.jpg"
+                                class="img-fluid img-responsive" alt="news image"></a>
                         <div class="title-wrap">
                             <h4 class="title"><a href="blog-single.html">Happiness is an extra scoop of a soup</a></h4>
                             <ul class="admin-list mt-2 mb-4">
@@ -108,8 +154,8 @@
                 </div>
                 <div class="item">
                     <div class="news-img">
-                        <a href="blog-single.html"><img src="assets/images/banner-blog2.jpg" class="img-fluid img-responsive"
-                                alt="news image"></a>
+                        <a href="blog-single.html"><img src="assets/images/banner-blog2.jpg"
+                                class="img-fluid img-responsive" alt="news image"></a>
                         <div class="title-wrap">
                             <h4 class="title"><a href="blog-single.html">Barbecue grilled chicken & Sauce</a></h4>
                             <ul class="admin-list mt-2 mb-4">
@@ -126,8 +172,8 @@
                 </div>
                 <div class="item">
                     <div class="news-img">
-                        <a href="blog-single.html"><img src="assets/images/banner-blog3.jpg" class="img-fluid img-responsive"
-                                alt="news image"></a>
+                        <a href="blog-single.html"><img src="assets/images/banner-blog3.jpg"
+                                class="img-fluid img-responsive" alt="news image"></a>
                         <div class="title-wrap">
                             <h4 class="title"><a href="blog-single.html">Delicious pizza with mozzarella cheese</a></h4>
                             <ul class="admin-list mt-2 mb-4">
@@ -144,10 +190,11 @@
                 </div>
                 <div class="item">
                     <div class="news-img">
-                        <a href="blog-single.html"><img src="assets/images/banner-blog6.jpg" class="img-fluid img-responsive"
-                                alt="news image"></a>
+                        <a href="blog-single.html"><img src="assets/images/banner-blog6.jpg"
+                                class="img-fluid img-responsive" alt="news image"></a>
                         <div class="title-wrap">
-                            <h4 class="title"><a href="blog-single.html">How to make a quick and easy breakfast?</a></h4>
+                            <h4 class="title"><a href="blog-single.html">How to make a quick and easy breakfast?</a>
+                            </h4>
                             <ul class="admin-list mt-2 mb-4">
                                 <li><a href="#blog"><i class="far fa-user"></i>Mreen Blo
                                     </a></li>
@@ -162,8 +209,8 @@
                 </div>
                 <div class="item">
                     <div class="news-img">
-                        <a href="blog-single.html"><img src="assets/images/banner-blog5.jpg" class="img-fluid img-responsive"
-                                alt="news image"></a>
+                        <a href="blog-single.html"><img src="assets/images/banner-blog5.jpg"
+                                class="img-fluid img-responsive" alt="news image"></a>
                         <div class="title-wrap">
                             <h4 class="title"><a href="blog-single.html">Breakfast with Bun & White cream</a></h4>
                             <ul class="admin-list mt-2 mb-4">
@@ -180,8 +227,8 @@
                 </div>
                 <div class="item">
                     <div class="news-img">
-                        <a href="blog-single.html"><img src="assets/images/banner-blog8.jpg" class="img-fluid img-responsive"
-                                alt="news image"></a>
+                        <a href="blog-single.html"><img src="assets/images/banner-blog8.jpg"
+                                class="img-fluid img-responsive" alt="news image"></a>
                         <div class="title-wrap">
                             <h4 class="title"><a href="blog-single.html">12 must-eat breakfast egg sandwiches</a></h4>
                             <ul class="admin-list mt-2 mb-4">
@@ -198,8 +245,8 @@
                 </div>
                 <div class="item">
                     <div class="news-img">
-                        <a href="blog-single.html"><img src="assets/images/banner-blog4.jpg" class="img-fluid img-responsive"
-                                alt="news image"></a>
+                        <a href="blog-single.html"><img src="assets/images/banner-blog4.jpg"
+                                class="img-fluid img-responsive" alt="news image"></a>
                         <div class="title-wrap">
                             <h4 class="title"><a href="blog-single.html">The plate of rice & cooked meat</a></h4>
                             <ul class="admin-list mt-2 mb-4">
@@ -216,8 +263,8 @@
                 </div>
                 <div class="item">
                     <div class="news-img">
-                        <a href="blog-single.html"><img src="assets/images/banner-blog7.jpg" class="img-fluid img-responsive"
-                                alt="news image"></a>
+                        <a href="blog-single.html"><img src="assets/images/banner-blog7.jpg"
+                                class="img-fluid img-responsive" alt="news image"></a>
                         <div class="title-wrap">
                             <h4 class="title"><a href="blog-single.html">Best foods to take for a company visit</a></h4>
                             <ul class="admin-list mt-2 mb-4">
