@@ -17,16 +17,23 @@
     <link rel="stylesheet" href="assets/css/style-starter.css">
 
     <script>
-        var chatbotContainer = document.getElementById("chatbot-container");
-        var chatbotFrame = document.getElementById("chatbot-frame");
-        var chatbotToggle = document.getElementById("chatbot-toggle");
+        // var chatbotContainer = document.getElementById("chatbot-container");
+        // var chatbotFrame = document.getElementById("chatbot-frame");
+        // var chatbotToggle = document.getElementById("chatbot-toggle");
 
-        chatbotToggle.onclick = function () {
-            chatbotContainer.classList.toggle("show");
-        }
+        // chatbotToggle.onclick = function () {
+        //     chatbotContainer.classList.toggle("show");
+        // }
 
-        // Change "path-to-your-chatbot-iframe" to the actual URL of your chatbot iframe
-        chatbotFrame.src = "https://webchat.botframework.com/embed/Frt-Final-Bot-bot?s=YOUR_SECRET_HERE";
+        // // Change "path-to-your-chatbot-iframe" to the actual URL of your chatbot iframe
+        // chatbotFrame.src = "https://webchat.botframework.com/embed/Frt-Final-Bot-bot?s=x1rMHhuRSbg.HG53MTdeiNO2C6Vr-ouDH6EPId2IzI-hNTreDjrlv8I";
+
+        const chatButton = document.getElementById('chat-button');
+        const chatWindow = document.getElementById('chat-window');
+
+        chatButton.addEventListener('click', function () {
+            chatWindow.style.display = 'block';
+        });
 
     </script>
 
@@ -74,30 +81,24 @@
                                 placeholder="Search">
                             <label class="button searchbutton" for="searchright"><i class="fas fa-search"></i></label>
                         </form>
-                </div>
-                <!-- //search button -->
-                <!-- toggle switch for light and dark theme -->
-                <div class="cont-ser-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div>
+                    </div>
+                    <!-- //search button -->
+                    <!-- toggle switch for light and dark theme -->
+                    <div class="cont-ser-position">
+                        <nav class="navigation">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <div class="mode-container">
+                                        <i class="gg-sun"></i>
+                                        <i class="gg-moon"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </nav>
+                    </div>
 
-            </div>
-            <div id="chatbot-container">
-                <div id="chatbot-frame">
-                    <iframe src="path-to-your-chatbot-iframe" frameborder="0"></iframe>
                 </div>
-                <button id="chatbot-toggle">Chat with us</button>
-            </div>
                 <!-- //toggle switch for light and dark theme -->
             </nav>
         </div>
@@ -848,6 +849,27 @@
             </div>
         </section>
         <!-- //copyright -->
+
+        <div class="floating-chat">
+            <button id="chat-button">Chat</button>
+            <div id="chat-window">
+                <!-- Chat window content goes here -->
+                <iframe
+                    src="https://webchat.botframework.com/embed/Frt-Final-Bot-bot?s=x1rMHhuRSbg.HG53MTdeiNO2C6Vr-ouDH6EPId2IzI-hNTreDjrlv8I"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <!-- <div id="chatbot-container">
+            <div id="chatbot-frame">
+                <iframe
+                    src="https://webchat.botframework.com/embed/Frt-Final-Bot-bot?s=x1rMHhuRSbg.HG53MTdeiNO2C6Vr-ouDH6EPId2IzI-hNTreDjrlv8I"
+                    style='min-width: 400px; width: 100%; min-height: 500px;' frameborder="0"></iframe> 
+                     
+            </div>
+            <button id="chatbot-toggle">Chat with us</button>
+        </div> -->
+
     </footer>
     <!-- //footer -->
 
@@ -856,6 +878,9 @@
     <button onclick="topFunction()" id="movetop" title="Go to top">
         <span class="fas fa-level-up-alt" aria-hidden="true"></span>
     </button>
+
+
+
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () {
