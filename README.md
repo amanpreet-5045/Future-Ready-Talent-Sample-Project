@@ -1,4 +1,4 @@
-# Future-Ready-Talent-Final-Project
+# Future-Ready-Talent-Final-Project-1
 This is my final project repository that i submitted for my virtual internship at Furture Ready Talent.
 This is my final *azure* deployed link - (https://purple-hill-06f22b000.3.azurestaticapps.net)
 
